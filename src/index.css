@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 37 36% 95%;
+    --foreground: 225 12% 30%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 225 12% 30%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 12% 30%;
+
+    --primary: 11 71% 63%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 153 23% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 35 36% 95%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 155 24% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 5% 90%;
+    --input: 20 5% 90%;
+    --ring: 11 71% 63%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 225 12% 15%;
+    --foreground: 210 40% 98%;
+
+    --card: 225 12% 20%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 225 12% 20%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 11 71% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 153 23% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 225 12% 25%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 155 24% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 225 12% 30%;
+    --input: 225 12% 30%;
+    --ring: 11 71% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-sand text-cedar font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.recipe-card {
+  @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
+}
+
+.input-recipe {
+  @apply bg-cream border-2 border-terracotta/20 focus:border-terracotta focus:ring-1 focus:ring-terracotta;
+}
+
+.btn-recipe {
+  @apply bg-terracotta hover:bg-terracotta/90 text-white font-medium py-2 px-4 rounded-md transition-colors;
+}
+
+.btn-secondary-recipe {
+  @apply bg-sage hover:bg-sage/90 text-white font-medium py-2 px-4 rounded-md transition-colors;
+}
+
+.container-recipe {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}

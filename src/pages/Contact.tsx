@@ -81,7 +81,7 @@ const Contact = () => {
                         <Mail className="h-5 w-5 text-terracotta mt-1" />
                         <div>
                           <h3 className="font-medium text-cedar">Email</h3>
-                          <p className="text-sm text-cedar/80">hello@flavorflux.com</p>
+                          <p className="text-sm text-cedar/80">contact@fishtankinstall.com</p>
                         </div>
                       </div>
                       
@@ -98,7 +98,7 @@ const Contact = () => {
                         <div>
                           <h3 className="font-medium text-cedar">Address</h3>
                           <p className="text-sm text-cedar/80">
-                            123 Recipe Lane<br />
+                            123 alaska Lane<br />
                             Foodville, CA 90210
                           </p>
                         </div>
